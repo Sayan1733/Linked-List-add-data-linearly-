@@ -77,6 +77,14 @@ int main(){
 	}
 	
 	display(head);
-	cout<<search(head,5)<<endl;	
+	int key;					//start of searching
+	cout<<"Enter the data for searching:";
+	cin>>key;
+	if(search(head,key)){
+		cout<<"TRUE"<<endl;
+	}
+	else{
+		cout<<"FALSE"<<endl;
+	}						//end of seacrching
 	return 0;
 }
